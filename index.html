@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="container section">
+	<section class="section" align="center">
+		<h1 class="title is-1">Simple Login</h1>
+		<h3 class="subtitle is-3">Firebase Login System</h3>
+	</section>
+	<hr>
+	<di form">
+		<input type="text" class="input is-large" id="txtEmail" placeholder="Email">
+		<br><br>
+		<input type="password" class="input is-large" id="txtPassword" placeholder="Password">
+		<br>
+		<br>
+		<center>
+			<button class="button is-dark is-large is-outlined btnLogin">Log In</button>
+			<button class="button is-dark is-large is-outlined btnRegister">Register</button>
+			<button class="button is-dark is-large is-outlined btnLogout" disabled>Log Out</button>
+		</center>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAULfpzAYeNLLs0tuJM3vI-L9SWlZmcGHA",
+	    authDomain: "login-641ab.firebaseapp.com",
+	    databaseURL: "https://login-641ab.firebaseio.com",
+	    projectId: "login-641ab",
+	    storageBucket: "login-641ab.appspot.com",
+	    messagingSenderId: "1090400827163"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="login.js"></script>
+</body>
+</html>
